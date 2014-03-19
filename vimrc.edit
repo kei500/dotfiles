@@ -1,0 +1,12 @@
+set autoindent                  " 前行のインデントを引き継ぐ
+set backspace=indent,eol,start  " バックスペースで消せるようにする
+set smartindent                 " インデントを適切に増減させる
+set whichwrap=b,s,h,l,<,>,[,]   " 行頭、行末の移動を可能に
+set wildmenu                    " コマンド補完を強化
+
+" タブ
+set expandtab       " タブキーで半角スペースを挿入
+set shiftwidth=2    " インデントの幅
+set smarttab        " 先頭のタブ入力はshiftwidth、他はtabstop
+set softtabstop=0   " タブキーを押したときの半角スペース数(0の場合tabstopに一致)
+set tabstop=2       " タブ文字の幅

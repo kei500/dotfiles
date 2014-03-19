@@ -1,0 +1,21 @@
+[color]
+  ui = auto           # 色をつける
+[merge]
+  ff = false          #  マージコミットを生成する
+[push]
+  default = tracking  # ワークツリーのブランチのみプッシュ
+[alias]
+  alias = !git config --list | grep alias | awk -F'.' '{print $2}'
+  b = branch -a
+  co = commit
+  ch = checkout
+  di = diff
+  l = log
+  lg = log --graph --decorate --oneline
+  st = status
+[github]
+  user = kei500
+  email = kei.tsuchiya86@gmail.com
+[user]
+  name = Kei Tsuchiya
+  email = kei.tsuchiya86@gmail.com

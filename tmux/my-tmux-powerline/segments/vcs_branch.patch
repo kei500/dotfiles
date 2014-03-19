@@ -1,0 +1,11 @@
+--- vcs_branch.sh	2014-03-19 11:57:42.753788841 +0900
++++ vcs_branch_fixed.sh	2014-03-19 11:57:31.632781812 +0900
+@@ -4,7 +4,7 @@
+ source "${TMUX_POWERLINE_DIR_LIB}/tmux_adapter.sh"
+ 
+ branch_symbol="⭠"
+-git_colour="5"
++git_colour="253"
+ svn_colour="220"
+ hg_colour="45"
+ 

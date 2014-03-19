@@ -1,0 +1,8 @@
+alias grep='grep --color'
+alias la='ls -lhAF'
+alias gch='git checkout'
+alias gdf='git diff'
+alias glg='git log'
+alias gst='git status'
+alias gffs='git flow feature start'
+alias gfff='git flow feature finish'

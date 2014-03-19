@@ -1,0 +1,41 @@
+" accelerated-smooth-scroll
+let g:ac_smooth_scroll_du_sleep_time_msec = 1  " <C-d,u>のスクロール速度
+let g:ac_smooth_scroll_fb_sleep_time_msec = 1  " <C-f,b>のスクロール速度
+
+" LightLine
+let g:lightline = {
+  \   'colorscheme': 'jellybeans'
+  \ }  " ステータスラインのカラースキーマを指定
+
+" The-NERD-Commenter
+let NERDSpaceDelims = 1  " コメントアウトの後のスペース数
+
+" The-NERD-tree
+" 引数なしでVimを開いたらNERD treeを起動
+autocmd vimenter * if !argc() | NERDTree | endif
+let g:NERDTreeIgnore = ['\.git$', '\.swp$', '\~$', '\.keep$']  " 表示しないファイルを指定
+let g:NERDTreeDirArrows  = 0  " グラフィカルに表示しない
+let g:NERDTreeMinimalUI  = 1  " ブックマークやヘルプのショートカットを表示しない
+let g:NERDTreeShowHidden = 1  " 隠しファイルを表示する
+
+" neocomplcache
+let g:acp_enableAtStartup = 0                             " AutoComplPopを無効化(競合するため)
+let g:neocomplcache_force_overwrite_completefunc = 1      " 強制的にcompletefuncを上書きする
+let g:neocomplcache_enable_at_startup = 1                 " 起動時に有効化
+let g:neocomplcache_enable_smart_case = 1                 " 大文字が入力されるまで大文字小文字の区別を無視する
+let g:neocomplcache_min_syntax_length = 3                 " シンタックスをキャッシュするときの最小文字長
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'   " neocomplcacheを自動的にロックするバッファ名のパターンを指定
+let g:neocomplcache_enable_camel_case_completion = 1      " キャメルレースの補完を有効化
+let g:neocomplcache_enable_underbar_completion = 1        " アンダースコア区切りの補完を有効化
+
+" vim-indent-guides
+let g:indent_guides_enable_on_vim_startup = 1     " 起動時に有効化
+let g:indent_guides_start_level = 2               " ガイドを開始するレベル(ネストの深さ)
+let g:indent_guides_auto_colors = 0               " 自動カラーを無効化
+let g:indent_guides_guide_size = 1                " ガイドの幅
+hi IndentGuidesOdd  ctermbg=darkgray
+hi IndentGuidesEven ctermbg=darkgray
+let g:indent_guides_color_change_percent = 30     " ガイドの色の変化の割合
+
+" YankRing
+let g:yankring_history_dir = $HOME.'/dotfiles/vim/'  " 履歴ファイルのパスを指定

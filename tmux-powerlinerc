@@ -1,0 +1,5 @@
+# 自分のテーマを適用
+export TMUX_POWERLINE_THEME="mytheme"
+
+# 天気予報の場所を東京に
+export TMUX_POWERLINE_SEG_WEATHER_LOCATION="26237038"

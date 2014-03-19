@@ -1,0 +1,9 @@
+filetype plugin on
+set autoread            " 他で書き換えられたら再読み込み
+set clipboard=unnamed   " ヤンクした内容をOSのクリップボードへ
+set noswapfile          " スワップファイルを作らない
+set scrolloff=5         " スクロール時の前後行の余白
+set t_Co=256            " 256色に対応
+set vb t_vb=            " ヒープ音を鳴らさない
+colorscheme hybrid      " カラースキーマを指定
+syntax on               " シンタックスハイライトを有効にする

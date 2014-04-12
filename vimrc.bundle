@@ -20,6 +20,7 @@ NeoBundle 'xmledit'                             " 入力補完 (XML/HTML)
 NeoBundle 'itchyny/lightline.vim'               " ステータスラインの設定
 NeoBundle 'The-NERD-tree'                       " ディレクトリ/ファイルのツリー表示
 NeoBundle 'nathanaelkane/vim-indent-guides'     " インデントレベル表示
+NeoBundle "kien/ctrlp.vim"                      " ファイル検索その他
 
 " 移動
 NeoBundle 'yonchu/accelerated-smooth-scroll'    " スクロールを滑らかにする
@@ -30,6 +31,7 @@ NeoBundle 'smartword'                           " 単語移動をスマートに
 NeoBundle 'grep.vim'                            " Vimでgrepを実行
 NeoBundle 'thinca/vim-quickrun'                 " Vimでスクリプトを実行
 NeoBundle 'thinca/vim-ref'                      " リファレンスを表示
+NeoBundle 'hotchpotch/perldoc-vim'              " Perldocを表示
 NeoBundle 'Shougo/vimproc', {
   \   'build' : {
   \     'windows' : 'make -f make_mingw32.mak',

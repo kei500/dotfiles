@@ -19,6 +19,10 @@ precmd () {
   [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
+# キーバインド
+bindkey '^Z' beginning-of-line
+bindkey '^E' end-of-line
+
 # プロンプト
 PROMPT="%{${fg[yellow]}%}%/%{${reset_color}%} "
 PROMPT2="%{${fg[yellow]}%}%_%{${reset_color}%} "

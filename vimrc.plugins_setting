@@ -15,8 +15,14 @@ let NERDSpaceDelims = 1  " コメントアウトの後のスペース数
 autocmd vimenter * if !argc() | NERDTree | endif
 let g:NERDTreeIgnore = ['\.git$', '\.swp$', '\~$', '\.keep$']  " 表示しないファイルを指定
 let g:NERDTreeDirArrows  = 0  " グラフィカルに表示しない
-let g:NERDTreeMinimalUI  = 1  " ブックマークやヘルプのショートカットを表示しない
+let g:NERDTreeMinimalUI  = 0  " ブックマークやヘルプのショートカットを表示しない
 let g:NERDTreeShowHidden = 1  " 隠しファイルを表示する
+
+nmap <silent> <C-e>      :NERDTreeToggle<CR>
+vmap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
+omap <silent> <C-e>      :NERDTreeToggle<CR>
+imap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
+cmap <silent> <C-e> <C-u>:NERDTreeToggle<CR>
 
 " neocomplcache
 let g:acp_enableAtStartup = 0                             " AutoComplPopを無効化(競合するため)

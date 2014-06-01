@@ -1,4 +1,5 @@
 set cursorline      " カーソル行のハイライト
+set cursorcolumn    " 列をハイライト
 set laststatus=2    " 末尾から2行目にステータスラインを表示
 set list            " 不可視文字表示
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<  " 不可視文字の表示を指定

@@ -20,8 +20,10 @@ precmd () {
 }
 
 # キーバインド
-bindkey '^Z' beginning-of-line
+bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
+bindkey '^F' forward-word
+bindkey '^B' backward-word
 
 # プロンプト
 PROMPT="%{${fg[yellow]}%}%/%{${reset_color}%} "

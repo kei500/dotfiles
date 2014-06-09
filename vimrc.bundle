@@ -23,7 +23,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'     " インデントレベル表示
 NeoBundle "kien/ctrlp.vim"                      " ファイル検索その他
 
 " 移動
-NeoBundle 'yonchu/accelerated-smooth-scroll'    " スクロールを滑らかにする
+" NeoBundle 'yonchu/accelerated-smooth-scroll'    " スクロールを滑らかにする
 NeoBundle 'matchit.zip'                         " 対応括弧への移動
 NeoBundle 'smartword'                           " 単語移動をスマートにする
 

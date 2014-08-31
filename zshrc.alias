@@ -1,6 +1,7 @@
 alias c='clear'
 alias grep='grep --color'
 alias la='ls -lhAF'
+alias ll='ls -l'
 alias gch='git checkout'
 alias gdf='git diff'
 alias gdfs='git diff --staged'

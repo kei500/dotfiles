@@ -2,6 +2,8 @@ alias c='clear'
 alias grep='grep --color'
 alias la='ls -lhAF'
 alias ll='ls -l'
+
+# git
 alias gch='git checkout'
 alias gdf='git diff'
 alias gdfs='git diff --staged'
@@ -9,4 +11,7 @@ alias glg='git log'
 alias gst='git status'
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
+
+# perl
+alias perlck='perl -Mstrict -Mwarnings -wc'
 alias perldoc='perldoc -M Pod::Text::Color::Delight'

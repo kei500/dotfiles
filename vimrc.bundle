@@ -2,7 +2,9 @@ filetype off
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-call neobundle#rc(expand('~/.vim/bundle/'))
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " 編集
 NeoBundle 'Align'                               " テキスト整形
@@ -75,4 +77,5 @@ NeoBundle 'vim-scripts/ruby-matchit'            " matchit(対応括弧への移�
 NeoBundle 'tpope/vim-rails'                     " Railsプロジェクト用
 NeoBundle 'vim-ruby/vim-ruby'                   " Rubyのシンタックスハイライト・スマートインデントなど
 
+call neobundle#end()
 filetype plugin indent on

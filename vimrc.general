@@ -7,7 +7,7 @@ set t_Co=256            " 256色に対応
 set vb t_vb=            " ヒープ音を鳴らさない
 colorscheme hybrid      " カラースキーマを指定
 syntax on               " シンタックスハイライトを有効にする
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8 " ファイル編集開始時に考慮される文字エンコーディングのリスト"
+set encoding=utf-8      " デフォルトのエンコーディング
 
 " プロジェクト固有の設定を反映
 augroup vimrc-local

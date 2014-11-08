@@ -17,6 +17,7 @@ NeoBundle 'yuroyoro/vim-autoclose'              " 閉じ括弧補完
 NeoBundle 'alpaca-tc/vim-endwise'               " end補完 (Ruby/ShellScript/Vim)
 NeoBundle 'YankRing.vim'                        " ヤンクの履歴を順に参照可能にする
 NeoBundle 'xmledit'                             " 入力補完 (XML/HTML)
+NeoBundle 'banyan/recognize_charcode.vim'       " 文字コード自動認識
 
 " 表示
 NeoBundle 'itchyny/lightline.vim'               " ステータスラインの設定

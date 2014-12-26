@@ -1,7 +1,5 @@
 [color]
   ui = auto           # 色をつける
-[merge]
-  ff = false          #  マージコミットを生成する
 [push]
   default = tracking  # ワークツリーのブランチのみプッシュ
 [alias]

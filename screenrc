@@ -1,1 +1,2 @@
 caption always "%{= wk} %-w%{=bu dr}%n %t%{-}%+w"
+defscrollback 100000

@@ -88,6 +88,12 @@ man() {
 # その他
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/local/bin:$PATH"
-eval "$(rbenv init -)"
-source ~/perl5/perlbrew/etc/bashrc
+if [ -d "$HOME/.rbenv" ]; then
+  eval "$(rbenv init -)"
+fi
+
+if [ -e "~/perl5/perlbrew/etc/bashrc" ]; then
+  source ~/perl5/perlbrew/etc/bashrc
+fi
+
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+rm -f ~/.gemrc
 rm -f ~/.gitconfig
 rm -f ~/.screenrc
 rm -f ~/.tmux.conf
@@ -10,6 +11,7 @@ rm -f ~/.vimrc
 rm -f ~/.vimshrc
 rm -rf ~/dotfiles/tmux/tmux-powerline
 
+ln -s ~/dotfiles/gemrc            ~/.gemrc
 ln -s ~/dotfiles/gitconfig        ~/.gitconfig
 ln -s ~/dotfiles/screenrc         ~/.screenrc
 ln -s ~/dotfiles/tmux.conf        ~/.tmux.conf

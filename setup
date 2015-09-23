@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ ! -e "$HOME/dotfiles/vim/bundle/" ]; then
+  mkdir -p ~/dotfiles/vim/bundle
+  git clone https://github.com/Shougo/neobundle.vim ~/dotfiles/vim/bundle/neobundle.vim
+fi
+
 for rc in gemrc gitconfig screenrc tmux.conf tmux-powerlinerc zshrc vim vimrc
 do
   rm -f ~/.$rc && ln -s ~/dotfiles/$rc ~/.$rc

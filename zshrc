@@ -96,4 +96,5 @@ if [ -e "~/perl5/perlbrew/etc/bashrc" ]; then
   source ~/perl5/perlbrew/etc/bashrc
 fi
 
+# tmux powerline にカレントディレクトリを表示するために必要
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'

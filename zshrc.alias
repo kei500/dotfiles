@@ -4,13 +4,18 @@ alias la='ls -lhAF'
 alias ll='ls -l'
 
 # git
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
 alias gch='git checkout'
+alias gchb='git checkout -b'
 alias gdf='git diff'
 alias gdfs='git diff --staged'
 alias glg='git log'
 alias gst='git status'
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
+alias gpn='git push -n'
 
 # perl
 alias perlck='perl -Mstrict -Mwarnings -wc'

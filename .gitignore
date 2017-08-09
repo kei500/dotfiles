@@ -1,2 +1,4 @@
 /tmux/tmux-powerline
 /vim
+/zshrc.alias.d/*
+!/zshrc.alias.d/.gitkeep

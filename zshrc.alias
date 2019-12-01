@@ -1,7 +1,19 @@
 alias c='clear'
 alias grep='grep --color'
-alias la='ls -lhAF'
-alias ll='ls -l'
+
+# ls の結果に色をつける
+case "${OSTYPE}" in
+darwin*)
+  alias ls="ls -G"
+  alias ll="ls -lG"
+  alias la="ls -laG"
+  ;;
+linux*)
+  alias ls='ls --color'
+  alias ll='ls -l --color'
+  alias la='ls -la --color'
+  ;;
+esac
 
 # git
 alias gb='git branch'

@@ -15,10 +15,10 @@ imap <silent> <C-e> <Esc>:NERDTreeToggle<CR>
 cmap <silent> <C-e> <C-u>:NERDTreeToggle<CR>
 
 " vim-indent-guides
-let g:indent_guides_enable_on_vim_startup = 1     " 起動時に有効化
-let g:indent_guides_start_level = 2               " ガイドを開始するレベル(ネストの深さ)
-let g:indent_guides_auto_colors = 0               " 自動カラーを無効化
-let g:indent_guides_guide_size = 1                " ガイドの幅
+let g:indent_guides_enable_on_vim_startup = 1  " 起動時に有効化
+let g:indent_guides_start_level = 2            " ガイドを開始するレベル(ネストの深さ)
+let g:indent_guides_auto_colors = 0            " 自動カラーを無効化
+let g:indent_guides_guide_size = 1             " ガイドの幅
 hi IndentGuidesOdd  ctermbg=darkgray
 hi IndentGuidesEven ctermbg=darkgray
-let g:indent_guides_color_change_percent = 30     " ガイドの色の変化の割合
+let g:indent_guides_color_change_percent = 30  " ガイドの色の変化の割合

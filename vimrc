@@ -1,7 +1,7 @@
-set nocompatible  " vi互換にしない
+set nocompatible  " vi 互換にしない
 
-" NeoBundle
-source ~/dotfiles/vimrc.bundle
+" Dein の設定
+source ~/dotfiles/vimrc.dein
 
 " 基本設定
 source ~/dotfiles/vimrc.general

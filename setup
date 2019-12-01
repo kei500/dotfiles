@@ -1,9 +1,12 @@
 #!/bin/sh
 
-if [ ! -e "$HOME/dotfiles/vim/bundle/" ]; then
-  mkdir -p ~/dotfiles/vim/bundle
-  git clone git@github.com:Shougo/neobundle.vim.git ~/dotfiles/vim/bundle/neobundle.vim
+cd ~
+if [ ! -e '~/.cache/dein' ]; then
+  mkdir -p ~/.cache/dein
 fi
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh ./installer.sh ~/.cache/dein
+rm ./installer.sh
 
 for rc in gemrc gitconfig screenrc tmux.conf tmux-powerlinerc zshrc vim vimrc
 do

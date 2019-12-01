@@ -1,0 +1,23 @@
+# 一般
+[[plugins]] # ディレクトリ/ファイルのツリーを表示する
+repo = 'scrooloose/nerdtree'
+
+# 編集
+[[plugins]] # コメントイン/アウトを簡単にする
+repo = 'scrooloose/nerdcommenter'
+[[plugins]] # 閉じ括弧を補完する
+repo = 'Townk/vim-autoclose'
+
+# 表示
+[[plugins]] # git の差分を表示する
+repo = 'airblade/vim-gitgutter'
+[[plugins]] # インデントレベルを表示する
+repo = 'nathanaelkane/vim-indent-guides'
+
+# カラースキーマ
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+
+# シンタックスハイライト
+[[plugins]]
+repo = 'cespare/vim-toml'

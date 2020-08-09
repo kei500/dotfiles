@@ -8,6 +8,7 @@ setopt auto_pushd           # cd時にディレクトリスタックにpushd
 autoload -U colors; colors  # 色を使用できるようにする
 setopt prompt_subst         # プロンプトに式展開を適用
 export LSCOLORS=gxfxcxdxbxegedabagacad  # lsの色設定
+export LESSCHARSET=utf-8    # less の文字コードを指定
 
 # VCSのブランチ名をプロンプトに表示
 autoload -Uz vcs_info

@@ -92,6 +92,7 @@ export PATH="$HOME/local/bin:$PATH"
 if [ -d "$HOME/.rbenv" ]; then
   eval "$(rbenv init -)"
 fi
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
 
 if [ -e "~/perl5/perlbrew/etc/bashrc" ]; then
   source ~/perl5/perlbrew/etc/bashrc

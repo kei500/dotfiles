@@ -89,6 +89,7 @@ man() {
 # その他
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 if [ -d "$HOME/.rbenv" ]; then
   eval "$(rbenv init -)"
 fi

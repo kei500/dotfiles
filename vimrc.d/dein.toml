@@ -21,3 +21,5 @@ repo = 'w0ng/vim-hybrid'
 # シンタックスハイライト
 [[plugins]]
 repo = 'cespare/vim-toml'
+[[plugins]]
+repo = 'juanchanco/vim-jbuilder'

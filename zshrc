@@ -69,6 +69,9 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
+# zshrc.d 以下の読み込み
+source ~/dotfiles/zshrc.d/*
+
 # エイリアス
 source ~/dotfiles/zshrc.alias
 

@@ -23,3 +23,5 @@ repo = 'w0ng/vim-hybrid'
 repo = 'cespare/vim-toml'
 [[plugins]]
 repo = 'juanchanco/vim-jbuilder'
+[[plugins]]
+repo = 'chr4/nginx.vim'

@@ -2,3 +2,5 @@
 /vim
 /zshrc.alias.d/*
 !/zshrc.alias.d/.gitkeep
+/zshrc.local.d/*
+!/zshrc.local.d/.gitkeep

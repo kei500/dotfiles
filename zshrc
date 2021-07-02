@@ -70,7 +70,14 @@ bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
 # zshrc.d 以下の読み込み
-source ~/dotfiles/zshrc.d/*
+for rc in `ls ~/dotfiles/zshrc.d`; do
+  source ~/dotfiles/zshrc.d/$rc
+done
+
+# zshrc.local.d 以下の読み込み
+for rc in `ls ~/dotfiles/zshrc.local.d`; do
+  source ~/dotfiles/zshrc.local.d/$rc
+done
 
 # エイリアス
 source ~/dotfiles/zshrc.alias

@@ -22,3 +22,6 @@ let g:indent_guides_guide_size = 1             " ガイドの幅
 hi IndentGuidesOdd  ctermbg=darkgray
 hi IndentGuidesEven ctermbg=darkgray
 let g:indent_guides_color_change_percent = 30  " ガイドの色の変化の割合
+
+" vim-terraform
+let g:terraform_fmt_on_save=1 " 保存時に terraform fmt を実行する

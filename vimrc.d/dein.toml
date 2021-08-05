@@ -7,6 +7,8 @@ repo = 'scrooloose/nerdtree'
 repo = 'scrooloose/nerdcommenter'
 [[plugins]] # 閉じ括弧を補完する
 repo = 'Townk/vim-autoclose'
+[[plugins]] # terraform fmt を自動実行する
+repo = 'hashivim/vim-terraform'
 
 # 表示
 [[plugins]] # git の差分を表示する

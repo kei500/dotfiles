@@ -15,3 +15,6 @@ set smartindent                 " インデントを適切に増減させる
 augroup vimrc
   autocmd! FileType perl setlocal shiftwidth=4 tabstop=2 softtabstop=2
 augroup END
+
+" .tf ファイルの行末尾空白と末尾空行を削除する
+autocmd BufWritePre *.tf %s#\($\n\s*\)\+\%$##e

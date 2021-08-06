@@ -30,6 +30,10 @@ alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
 alias gpn='git push -n'
 
+# terraform
+alias tp='terraform plan'
+alias ta='terraform apply'
+
 # perl
 alias perlck='perl -Mstrict -Mwarnings -wc'
 alias perldoc='perldoc -M Pod::Text::Color::Delight'

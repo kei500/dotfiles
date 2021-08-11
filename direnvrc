@@ -1,0 +1,6 @@
+function aws-switch-role() {
+  profile_name=$1
+
+  export AWS_ASSUME_ROLE_TTL=1h
+  export $(aws-vault exec $profile_name -- env | grep AWS_ | grep -v AWS_VAULT)
+}

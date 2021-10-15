@@ -1,0 +1,15 @@
+function git-delete-squashed() {
+  if [ ! -z "${1+UNDEF}" ]; then
+    base_branch=$1
+  else
+    base_branch=$(git for-each-ref refs/heads/ "--format=%(refname:short)" | peco)
+  fi
+
+  git checkout -q $base_branch && \
+    git for-each-ref refs/heads/ "--format=%(refname:short)" | \
+    while read branch; do
+      mergeBase=$(git merge-base $base_branch $branch) && \
+        [[ $(git cherry $base_branch $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && \
+        git branch -D $branch;
+  done
+}

@@ -117,5 +117,7 @@ if [ -d "$HOME/.goenv" ]; then
   export PATH="$PATH:$GOPATH/bin"
 fi
 
+which direnv > /dev/null && eval "$(direnv hook zsh)"
+
 # tmux powerline にカレントディレクトリを表示するために必要
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'

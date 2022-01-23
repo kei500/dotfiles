@@ -33,6 +33,8 @@ alias gpn='git push -n'
 # terraform
 alias tp='terraform plan'
 alias ta='terraform apply'
+alias ti='terraform init'
+alias tc='terraform console'
 
 # perl
 alias perlck='perl -Mstrict -Mwarnings -wc'

@@ -32,6 +32,7 @@ alias gpn='git push -n'
 
 # terraform
 alias tp='terraform plan'
+alias tprf='terraform plan -refresh=false'
 alias ta='terraform apply'
 alias ti='terraform init'
 alias tc='terraform console'

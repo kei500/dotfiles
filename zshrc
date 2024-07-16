@@ -121,3 +121,7 @@ which direnv > /dev/null && eval "$(direnv hook zsh)"
 
 # tmux powerline にカレントディレクトリを表示するために必要
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+
+if [ -d "$HOME/.terraform.d/plugin-cache" ]; then
+  export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+fi
